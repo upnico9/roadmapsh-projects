@@ -1,0 +1,16 @@
+{
+	"name": "expense-tracker",
+	"version": "1.0.0",
+	"description": "A simple expense tracker",
+	"main": "index.js",
+	"type": "module",
+	"bin": {
+		"expense-tracker": "./index.js"
+	},
+	"dependencies": {
+		"commander": "^12.1.0",
+		"fast-csv": "^5.0.1",
+		"objects-to-csv": "^1.3.6",
+		"uuid": "^10.0.0"
+	}
+}
