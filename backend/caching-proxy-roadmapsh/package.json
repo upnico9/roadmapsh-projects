@@ -1,0 +1,26 @@
+{
+	"name": "caching-proxy",
+	"version": "1.0.0",
+	"description": "A caching proxy server from roadmap.sh",
+	"main": "src/cli.js",
+	"type": "module",
+	"bin": {
+		"caching-proxy": "./bin/cli.js"
+	},
+	"scripts": {
+		"start": "node src/cli.js",
+		"dev": "nodemon src/cli.js --port 2000 --origin 'https://api.agify.io/'"
+	},
+	"dependencies": {
+		"axios": "^1.7.7",
+		"fastify": "^5.1.0",
+		"nodemon": "^3.1.7",
+		"redis": "^4.7.0",
+		"yargs": "^17.7.2"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.14.0",
+		"eslint": "^9.14.0",
+		"globals": "^15.12.0"
+	}
+}
