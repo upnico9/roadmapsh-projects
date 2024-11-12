@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unit Converter for Length">
+    <title>Length Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Length Unit Converter</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Convert Length Units</h2>
+            <!-- Conversion form will go here -->
+            <form id="length-converter-form">
+                <div class="form-group">
+                    <label for="input-value">Value:</label>
+                    <input type="number" id="input-value" name="input-value" required>
+                </div>
+                <div class="form-group">
+                    <label for="input-unit">From:</label>
+                    <select id="input-unit" name="input-unit" required>
+                        <option value="meters">Meters</option>
+                        <option value="kilometers">Kilometers</option>
+                        <option value="centimeters">Centimeters</option>
+                        <option value="millimeters">Millimeters</option>
+                        <option value="miles">Miles</option>
+                        <option value="yards">Yards</option>
+                        <option value="feet">Feet</option>
+                        <option value="inches">Inches</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="output-unit">To:</label>
+                    <select id="output-unit" name="output-unit" required>
+                        <option value="meters">Meters</option>
+                        <option value="kilometers">Kilometers</option>
+                        <option value="centimeters">Centimeters</option>
+                        <option value="millimeters">Millimeters</option>
+                        <option value="miles">Miles</option>
+                        <option value="yards">Yards</option>
+                        <option value="feet">Feet</option>
+                        <option value="inches">Inches</option>
+                    </select>
+                </div>
+                <button type="submit">Convert</button>
+            </form>
+            <button type="reset">Reset</button>
+        </section>
+        <section id="conversion-result">
+            <h2>Conversion Result</h2>
+            <p id="result"></p>
+        </section>
+        <section>
+            <a href="index.html">Go back to the main menu</a>
+        </section>
+    </main>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

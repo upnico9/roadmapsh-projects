@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unit Converter for Length">
+    <title>Temperature Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Temperature Unit Converter</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Temperature Weight Units</h2>
+            <form id="temperature-converter-form">
+                <div class="form-group">
+                    <label for="input-value">Enter value:</label>
+                    <input type="number" id="input-value" name="input-value" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="input-unit">From:</label>
+                    <select id="input-unit" name="input-unit">
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+            
+                <div class="form-group">
+                    <label for="output-unit">To:</label>
+                    <select id="output-unit" name="output-unit">
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+            
+                <button type="submit">Convert</button>
+            </form>
+            <!-- Conversion form will go here -->
+        </section>
+        <section id="conversion-result">
+            <h2>Conversion Result</h2>
+            <p id="result"></p>
+        </section>
+        <section>
+            <a href="index.html">Go back to the main menu</a>
+        </section>
+    </main>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

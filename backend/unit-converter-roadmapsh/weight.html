@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unit Converter for Length">
+    <title>Weight Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Weight Unit Converter</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Convert Weight Units</h2>
+            <form id="weight-converter-form">
+                <div class="form-group">
+                    <label for="input-value">Enter weight:</label>
+                    <input type="number" id="input-value" name="input-value" required>
+                </div>
+                <div class="form-group">
+                    <label for="input-unit">From:</label>
+                    <select id="input-unit" name="input-unit">
+                        <option value="milligrams">Miligrams</option>
+                        <option value="kilograms">Kilograms</option>
+                        <option value="grams">Grams</option>
+                        <option value="pounds">Pounds</option>
+                        <option value="ounces">Ounces</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="output-unit">To:</label>
+                    <select id="output-unit" name="output-unit">
+                        <option value="milligrams">Miligrams</option>
+                        <option value="kilograms">Kilograms</option>
+                        <option value="grams">Grams</option>
+                        <option value="pounds">Pounds</option>
+                        <option value="ounces">Ounces</option>
+                    </select>
+                </div>
+                
+                <button type="submit">Convert</button>
+            </form>
+            <div id="result"></div>
+            <!-- Conversion form will go here -->
+        </section>
+        <section id="conversion-result">
+            <h2>Conversion Result</h2>
+            <p id="result"></p>
+        </section>
+        <section>
+            <a href="index.html">Go back to the main menu</a>
+        </section>
+    </main>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
