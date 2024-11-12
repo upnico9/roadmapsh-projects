@@ -1,6 +1,0 @@
-{   "name": "task-cli",
-    "version": "1.0.0",
-    "bin": {
-     "task-cli": "./index.js"
-    }
-}
